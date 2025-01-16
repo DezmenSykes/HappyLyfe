@@ -7,6 +7,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
+
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(1);
   const [hasClicked, setHasClicked] = useState(false);
@@ -58,7 +59,7 @@ const Hero = () => {
       clipPath:
         "polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)",
 
-      borderRadius: "0 0 40% 10%",
+      borderRadius: "0 0 100% 100%",
     });
 
     gsap.from("#video-frame", {
@@ -131,13 +132,13 @@ const Hero = () => {
           />
         </div>
         <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-linen-100 difference">
-          & Respect Others
+          Community
         </h1>
       </div>
       <div className="absolute left-0 top-0 z-40">
         <div className="mt-24 px-5 sm:px-10">
           <h1 className="special-font hero-heading text-linen-100 difference">
-            Love <b>Y</b>ourself
+            Protect Your
           </h1>
           <p className="mb-5 max-w-64 font-robert-regular text-lg text-linen-200">
             Love is a powerful force <br /> that can heal any wound.
@@ -151,7 +152,7 @@ const Hero = () => {
         </div>
       </div>
       <h1 className="special-font hero-heading absolute bottom-5 right-5 text-raisin-black">
-        & <b>R</b>espect Others
+        Community
       </h1>
     </div>
   );
